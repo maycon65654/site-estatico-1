@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XPTO Consultoria WP - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'sans-serif';
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="Home.html" class="text-2xl font-bold text-blue-600">
+                <i class="fas fa-rocket"></i> XPTO Consultoria WP
+            </a>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-6">
+                <a href="Home.html" class="text-blue-600 font-semibold border-b-2 border-blue-600">Home</a>
+                <a href="servicos.html" class="text-gray-600 hover:text-blue-600">Serviços</a>
+                <a href="Contato.html" class="text-gray-600 hover:text-blue-600">Contato</a>
+            </div>
+            <!-- Hamburger Button -->
+            <div class="md:hidden">
+                <button id="hamburger-button" class="text-gray-600 hover:text-blue-600 focus:outline-none">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <a href="Home.html" class="block py-2 px-4 text-sm text-blue-600 bg-gray-50">Home</a>
+            <a href="servicos.html" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-50">Serviços</a>
+            <a href="Contato.html" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-50">Contato</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-blue-600 text-white text-center py-20">
+            <div class="container mx-auto px-6">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight">Transformando seu WordPress em uma Máquina de Resultados</h1>
+                <p class="mt-4 text-lg md:text-xl text-blue-100">Soluções completas em performance, segurança e desenvolvimento para WordPress.</p>
+                <a href="servicos.html" class="mt-8 inline-block bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300">Conheça Nossos Serviços</a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="py-16">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2">
+                    <img src="https://dummyimage.com/600x400/cccccc/000000&text=Nossa+Equipe" alt="Nossa Equipe" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2 md:pl-12 mt-8 md:mt-0">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Sobre a XPTO</h2>
+                    <p class="text-lg text-gray-600 mb-4">
+                        Somos uma equipe de especialistas apaixonados por WordPress. Nossa missão é ajudar empresas a alcançarem seu máximo potencial online, oferecendo soluções personalizadas que unem design, funcionalidade e performance.
+                    </p>
+                    <p class="text-lg text-gray-600">
+                        Com anos de experiência no mercado, a XPTO se destaca pelo compromisso com a qualidade e a satisfação do cliente.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Highlight -->
+        <section class="bg-gray-50 py-16">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-12">Nossos Principais Serviços</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <!-- Service 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <i class="fas fa-tachometer-alt fa-3x text-blue-600 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Otimização de Performance</h3>
+                        <p class="text-gray-600">Deixamos seu site mais rápido para melhorar a experiência do usuário e o ranking no Google.</p>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <i class="fas fa-shield-alt fa-3x text-blue-600 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Segurança Avançada</h3>
+                        <p class="text-gray-600">Protegemos seu site contra ameaças, hackers e malwares com as melhores práticas de segurança.</p>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <i class="fas fa-puzzle-piece fa-3x text-blue-600 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Plugins Customizados</h3>
+                        <p class="text-gray-600">Desenvolvemos soluções sob medida para atender às necessidades específicas do seu negócio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 XPTO Consultoria WP. Todos os direitos reservados.</p>
+            <div class="mt-4 flex justify-center space-x-6">
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburgerButton = document.getElementById('hamburger-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        hamburgerButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>

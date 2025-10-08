@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XPTO Consultoria WP - Serviços</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'sans-serif';
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="Home.html" class="text-2xl font-bold text-blue-600">
+                <i class="fas fa-rocket"></i> XPTO Consultoria WP
+            </a>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-6">
+                <a href="Home.html" class="text-gray-600 hover:text-blue-600">Home</a>
+                <a href="servicos.html" class="text-blue-600 font-semibold border-b-2 border-blue-600">Serviços</a>
+                <a href="Contato.html" class="text-gray-600 hover:text-blue-600">Contato</a>
+            </div>
+            <!-- Hamburger Button -->
+            <div class="md:hidden">
+                <button id="hamburger-button" class="text-gray-600 hover:text-blue-600 focus:outline-none">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <a href="Home.html" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-50">Home</a>
+            <a href="servicos.html" class="block py-2 px-4 text-sm text-blue-600 bg-gray-50">Serviços</a>
+            <a href="Contato.html" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-50">Contato</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-16">
+        <h1 class="text-4xl font-bold text-center mb-12">Nossos Serviços</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+            <!-- Serviço 1: Otimização de Performance -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://dummyimage.com/600x400/3b82f6/ffffff&text=Performance" alt="Performance" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <i class="fas fa-tachometer-alt fa-2x text-blue-600 mb-3"></i>
+                    <h3 class="text-2xl font-bold mb-3">Otimização de Performance</h3>
+                    <p class="text-gray-600">Analisamos e otimizamos cada aspecto do seu site para garantir um carregamento ultra-rápido, melhorando a experiência do usuário e os rankings de SEO.</p>
+                </div>
+            </div>
+
+            <!-- Serviço 2: Segurança Avançada -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://dummyimage.com/600x400/10b981/ffffff&text=Segurança" alt="Segurança" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <i class="fas fa-shield-alt fa-2x text-green-500 mb-3"></i>
+                    <h3 class="text-2xl font-bold mb-3">Segurança Avançada</h3>
+                    <p class="text-gray-600">Implementamos um escudo completo de proteção com firewalls, monitoramento constante e remoção de malware para blindar seu site contra ataques.</p>
+                </div>
+            </div>
+
+            <!-- Serviço 3: Desenvolvimento de Temas -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://dummyimage.com/600x400/8b5cf6/ffffff&text=Temas" alt="Temas" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <i class="fas fa-paint-brush fa-2x text-purple-500 mb-3"></i>
+                    <h3 class="text-2xl font-bold mb-3">Desenvolvimento de Temas</h3>
+                    <p class="text-gray-600">Criamos temas WordPress exclusivos e responsivos a partir do zero, alinhados perfeitamente com a identidade visual e as necessidades da sua marca.</p>
+                </div>
+            </div>
+
+            <!-- Serviço 4: Criação de Plugins -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://dummyimage.com/600x400/ef4444/ffffff&text=Plugins" alt="Plugins" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <i class="fas fa-puzzle-piece fa-2x text-red-500 mb-3"></i>
+                    <h3 class="text-2xl font-bold mb-3">Criação de Plugins</h3>
+                    <p class="text-gray-600">Precisa de uma funcionalidade que não existe? Nós desenvolvemos plugins customizados para estender as capacidades do seu site WordPress.</p>
+                </div>
+            </div>
+
+            <!-- Serviço 5: Manutenção e Suporte -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://dummyimage.com/600x400/f97316/ffffff&text=Suporte" alt="Suporte" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <i class="fas fa-life-ring fa-2x text-orange-500 mb-3"></i>
+                    <h3 class="text-2xl font-bold mb-3">Manutenção e Suporte</h3>
+                    <p class="text-gray-600">Oferecemos planos de manutenção contínua para manter seu site sempre atualizado, seguro e funcionando perfeitamente, para que você possa focar no seu negócio.</p>
+                </div>
+            </div>
+
+            <!-- Serviço 6: Consultoria Estratégica -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://dummyimage.com/600x400/facc15/000000&text=Estratégia" alt="Estratégia" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <i class="fas fa-lightbulb fa-2x text-yellow-500 mb-3"></i>
+                    <h3 class="text-2xl font-bold mb-3">Consultoria Estratégica</h3>
+                    <p class="text-gray-600">Ajudamos você a planejar a arquitetura, funcionalidades e estratégias de conteúdo para garantir que seu projeto WordPress seja um sucesso.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 XPTO Consultoria WP. Todos os direitos reservados.</p>
+            <div class="mt-4 flex justify-center space-x-6">
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburgerButton = document.getElementById('hamburger-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        hamburgerButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
